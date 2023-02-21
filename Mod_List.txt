@@ -9,5 +9,6 @@ Electroblob's Wizardry
 Elanai Dodge
 Game Stages
 Reskillable
+Spartan Weaponry
 Time Stages
 WizardryUtils
