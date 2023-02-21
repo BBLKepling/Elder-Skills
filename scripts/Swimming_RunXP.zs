@@ -28,7 +28,7 @@ events.onPlayerTick(function(event as PlayerTickEvent) {
       event.player.update(playerData + newDataXP);
       return;
     }
-    if (event.player.isInWater || event.player.isInLava) {
+    if (!event.player.onGround && (event.player.isInWater || event.player.isInLava)) {
       if (isNull(playerData.playerXP) || isNull(playerData.playerXP.swimmingXP)) {
         event.player.sendChat("Start Swimming XP : 1");
         var dataXP as IData = { playerXP:

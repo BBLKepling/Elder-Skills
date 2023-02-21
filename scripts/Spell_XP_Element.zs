@@ -11,6 +11,28 @@ spellEvent.getEvents().onSpellCastEventPost(function(event as ISpellCastEvent) {
   var playerCaster as IPlayer = event.caster;
   val playerData as IData = playerCaster.data;
 
+  if (event.spell.element == "MAGIC" || event.spell.element == "SORCERY"){
+    if (isNull(playerData.playerXP.nonElementXP) || isNull(playerData.playerXP)) {
+      playerCaster.sendChat("Start Non Elemental XP : 1");
+      var dataXP as IData = { playerXP:
+        {
+          nonElementXP: 1
+        }
+      };
+      playerCaster.update(playerData + dataXP);
+      return;
+    }
+    var newnonElemXP as int = playerData.playerXP.nonElementXP.asInt() + 1;
+    playerCaster.sendChat("New Non Elemental XP : " + newnonElemXP);
+    var newDataXP as IData = { playerXP:
+      {
+        nonElementXP: newnonElemXP
+      }
+    };
+    playerCaster.update(playerData + newDataXP);
+    return;
+  }
+
   if (event.spell.element == "FIRE"){
     if (isNull(playerData.playerXP.fireXP) || isNull(playerData.playerXP)) {
       playerCaster.sendChat("Start Fire XP : 1");
