@@ -1,0 +1,91 @@
+spelltype.attack=School of Invocation
+spelltype.defence=School of Abjuration
+spelltype.utility=School of Divination
+spelltype.minion=School of Conjuration
+spelltype.buff=School of Illusion
+spelltype.construct=School of Enchantment
+spelltype.projectile=School of Necromancy
+spelltype.alteration=School of Alteration
+
+element.ice.wizard=Hydromancer
+element.lightning.wizard=Aeromancer
+element.earth.wizard=Geomancer
+element.healing.wizard=Cleric
+
+element.fire=Fire Element
+element.ice=Water Element
+element.lightning=Air Element
+element.necromancy=Dark Element
+element.earth=Earth Element
+element.sorcery=Non-Elemental
+element.healing=Light Element
+
+
+
+item.banner.wizardry_ice.black=Black Water Emblem
+item.banner.wizardry_ice.red=Red Water Emblem
+item.banner.wizardry_ice.green=Green Water Emblem
+item.banner.wizardry_ice.brown=Brown Water Emblem
+item.banner.wizardry_ice.blue=Blue Water Emblem
+item.banner.wizardry_ice.purple=Purple Water Emblem
+item.banner.wizardry_ice.cyan=Cyan Water Emblem
+item.banner.wizardry_ice.silver=Light Gray Water Emblem
+item.banner.wizardry_ice.gray=Gray Water Emblem
+item.banner.wizardry_ice.pink=Pink Water Emblem
+item.banner.wizardry_ice.lime=Lime Water Emblem
+item.banner.wizardry_ice.yellow=Yellow Water Emblem
+item.banner.wizardry_ice.lightBlue=Light Blue Water Emblem
+item.banner.wizardry_ice.magenta=Magenta Water Emblem
+item.banner.wizardry_ice.orange=Orange Water Emblem
+item.banner.wizardry_ice.white=White Water Emblem
+
+item.banner.wizardry_lightning.black=Black Air Emblem
+item.banner.wizardry_lightning.red=Red Air Emblem
+item.banner.wizardry_lightning.green=Green Air Emblem
+item.banner.wizardry_lightning.brown=Brown Air Emblem
+item.banner.wizardry_lightning.blue=Blue Air Emblem
+item.banner.wizardry_lightning.purple=Purple Air Emblem
+item.banner.wizardry_lightning.cyan=Cyan Air Emblem
+item.banner.wizardry_lightning.silver=Light Gray Air Emblem
+item.banner.wizardry_lightning.gray=Gray Air Emblem
+item.banner.wizardry_lightning.pink=Pink Air Emblem
+item.banner.wizardry_lightning.lime=Lime Air Emblem
+item.banner.wizardry_lightning.yellow=Yellow Air Emblem
+item.banner.wizardry_lightning.lightBlue=Light Blue Air Emblem
+item.banner.wizardry_lightning.magenta=Magenta Air Emblem
+item.banner.wizardry_lightning.orange=Orange Air Emblem
+item.banner.wizardry_lightning.white=White Air Emblem
+
+item.banner.wizardry_necromancy.black=Black Dark Emblem
+item.banner.wizardry_necromancy.red=Red Dark Emblem
+item.banner.wizardry_necromancy.green=Green Dark Emblem
+item.banner.wizardry_necromancy.brown=Brown Dark Emblem
+item.banner.wizardry_necromancy.blue=Blue Dark Emblem
+item.banner.wizardry_necromancy.purple=Purple Dark Emblem
+item.banner.wizardry_necromancy.cyan=Cyan Dark Emblem
+item.banner.wizardry_necromancy.silver=Light Gray Dark Emblem
+item.banner.wizardry_necromancy.gray=Gray Dark Emblem
+item.banner.wizardry_necromancy.pink=Pink Dark Emblem
+item.banner.wizardry_necromancy.lime=Lime Dark Emblem
+item.banner.wizardry_necromancy.yellow=Yellow Dark Emblem
+item.banner.wizardry_necromancy.lightBlue=Light Blue Dark Emblem
+item.banner.wizardry_necromancy.magenta=Magenta Dark Emblem
+item.banner.wizardry_necromancy.orange=Orange Dark Emblem
+item.banner.wizardry_necromancy.white=White Dark Emblem
+
+item.banner.wizardry_healing.black=Black Light Emblem
+item.banner.wizardry_healing.red=Red Light Emblem
+item.banner.wizardry_healing.green=Green Light Emblem
+item.banner.wizardry_healing.brown=Brown Light Emblem
+item.banner.wizardry_healing.blue=Blue Light Emblem
+item.banner.wizardry_healing.purple=Purple Light Emblem
+item.banner.wizardry_healing.cyan=Cyan Light Emblem
+item.banner.wizardry_healing.silver=Light Gray Light Emblem
+item.banner.wizardry_healing.gray=Gray Light Emblem
+item.banner.wizardry_healing.pink=Pink Light Emblem
+item.banner.wizardry_healing.lime=Lime Light Emblem
+item.banner.wizardry_healing.yellow=Yellow Light Emblem
+item.banner.wizardry_healing.lightBlue=Light Blue Light Emblem
+item.banner.wizardry_healing.magenta=Magenta Light Emblem
+item.banner.wizardry_healing.orange=Orange Light Emblem
+item.banner.wizardry_healing.white=White Light Emblem

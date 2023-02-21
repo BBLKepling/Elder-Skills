@@ -1,0 +1,13 @@
+B.A.S.E.
+Baubles
+Bookshelf
+Compatskills
+ContentTweaker
+CraftTweaker
+CraftTweaker Integration
+Electroblob's Wizardry
+Elanai Dodge
+Game Stages
+Reskillable
+Time Stages
+WizardryUtils
