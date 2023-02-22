@@ -34,6 +34,7 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         lockpickXP: 0,
         sneakXP: 0,
         //Misc Skills?
+        fishingXP: 0,
         acrobatXP: 0,
         runningXP: 0,
         swimmingXP: 0,
