@@ -1,3 +1,5 @@
+Artisan Integration
+Artisan Worktables
 B.A.S.E.
 Baubles
 Bookshelf
@@ -8,7 +10,11 @@ CraftTweaker Integration
 Electroblob's Wizardry
 Elanai Dodge
 Game Stages
+Reach Fix
 Reskillable
+RLCombat
+Spartan Shields
 Spartan Weaponry
+Swing Through Grass
 Time Stages
 WizardryUtils
