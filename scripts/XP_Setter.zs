@@ -55,6 +55,8 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         necromancyXP: 0,
         alterationXP: 0,
         //Crafting Skills
+        tailorXP: 0,
+        tannerXP: 0,
         carpentryXP: 0,
         potteryXP: 0,
         masonryXP: 0,
