@@ -29,12 +29,15 @@ events.onEntityLivingJump(function(event as EntityLivingJumpEvent) {
     entityPlayer.update(playerData + newDataXP);
   }
 });
-
+//Only works in Survival
 events.onEntityLivingFall(function(event as EntityLivingFallEvent) {
   if(event.entityLivingBase instanceof IPlayer && !event.entityLivingBase.world.isRemote()) {
     var entityPlayer as IPlayer = event.entityLivingBase;
     entityPlayer.sendChat("Fall Distance : " + event.distance);
-    event.damageMultiplier -= (entityPlayer.skillData.getSkillInfo(<skill:reskillable:agility>).getLevel() / 100);
+    var fallDrop = event.distance as float;
+    var agiLevel = entityPlayer.skillData.getSkillInfo(<skill:reskillable:agility>).getLevel() as float;
+    var fallAdjust = ((agiLevel - fallDrop) / 100) as float;
+    event.damageMultiplier -= fallAdjust;
     if (entityPlayer.isInWater || entityPlayer.isInLava || event.distance < 5) {return;}
     var playerData as IData = entityPlayer.data;
     if (isNull(playerData.playerXP) || isNull(playerData.playerXP.acrobatXP)) {
