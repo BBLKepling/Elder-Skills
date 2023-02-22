@@ -1,5 +1,6 @@
 Artisan Integration
 Artisan Worktables
+Athenaeum
 B.A.S.E.
 Baubles
 Bookshelf
