@@ -1,3 +1,6 @@
+#norun
+//This doesn't work for Spartan Weaponry's crossbows, see AttackXP.zs
+
 import crafttweaker.event.ArrowLooseEvent;
 import crafttweaker.data.IData;
 

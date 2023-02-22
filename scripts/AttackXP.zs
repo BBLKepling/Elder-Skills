@@ -6,6 +6,10 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
 
+<ore:anyBow>.add(
+  <minecraft:bow:*>
+);
+
 <ore:anyAxe>.add(
   <minecraft:wooden_axe:*>,
   <minecraft:stone_axe:*>,
@@ -15,11 +19,7 @@ import crafttweaker.oredict.IOreDictEntry;
 );
 
 for item in loadedMods["minecraft"].items {
-/*
-  if (item.name has "axe") {
-    <ore:anyAxe>.add(item);
-  }
-*/
+
   if (item.name has "sword") {
     <ore:anyShortBlade>.add(item);
   }
@@ -27,6 +27,14 @@ for item in loadedMods["minecraft"].items {
 }
 
 for item in loadedMods["spartanweaponry"].items {
+
+  if (item.name has "bow") {
+    <ore:anyBow>.add(item);
+  }
+
+  if (item.name has "throwing" || item.name has "javelin" || item.name has "boomerang") {
+    <ore:anyThrow>.add(item);
+  }
 
   if (item.name has "battleaxe" || item.name has "halberd") {
     <ore:anyAxe>.add(item);
@@ -48,7 +56,7 @@ for item in loadedMods["spartanweaponry"].items {
     <ore:anyPolearm>.add(item);
   }
 
-  if (item.name has "rapier" || item.name has "saber" || item.name has "dagger"|| item.name has "glaive") {
+  if (item.name has "rapier" || item.name has "saber" || item.name has "dagger"  || item.name has "knife" || item.name has "glaive") {
     <ore:anyShortBlade>.add(item);
   }
 
@@ -63,6 +71,29 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent) {
 
     if (heldItemHand == IEntityEquipmentSlot.mainHand()) {
       var heldItemMain = entitylivingPlayer.mainHandHeldItem;
+
+      if (<ore:anyBow> has heldItemMain && event.damageSource.projectile) {
+        var playerData as IData = entitylivingPlayer.data;
+        if (isNull(playerData.playerXP) || isNull(playerData.playerXP.shootXP)) {
+          entitylivingPlayer.sendChat("Start Shoot XP : 1");
+          var dataXP as IData = { playerXP:
+            {
+              shootXP: 1
+            }
+          };
+          entitylivingPlayer.update(playerData + dataXP);
+          return;
+        }
+        var newShootXP as int = playerData.playerXP.shootXP.asInt() + 1;
+        entitylivingPlayer.sendChat("New Shoot XP : " + newShootXP);
+        var newDataXP as IData = { playerXP:
+          {
+            shootXP: newShootXP
+          }
+        };
+        entitylivingPlayer.update(playerData + newDataXP);
+        return;
+      }
 
       if (<ore:anyAxe> has heldItemMain) {
         var playerData as IData = entitylivingPlayer.data;
