@@ -1,3 +1,5 @@
+#packmode mage
+
 import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.data.IData;
 import mods.ctintegration.data.DataUtil;
@@ -14,12 +16,12 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         longbladeXP: 0,
         martialArtXP: 0,
         polearmXP: 0,
-        shortbladeXP: 0,
+        shortbladeXP: 100,
         shootXP: 0,
         throwXP: 0,
         //Defence Skills
-        unarmoredXP: 0,
-        lightArmorXP: 0,
+        unarmoredXP: 100,
+        lightArmorXP: 100,
         medArmorXP: 0,
         heavyArmorXP: 0,
         blockXP: 0,
@@ -39,22 +41,22 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         runningXP: 0,
         swimmingXP: 0,
         //Magic Element Skills
-        nonElementXP: 0,
-        airXP: 0,
-        earthXP: 0,
-        fireXP: 0,
-        waterXP: 0,
+        nonElementXP: 100,
+        airXP: 100,
+        earthXP: 100,
+        fireXP: 100,
+        waterXP: 100,
         lightXP: 0,
         darkXP: 0,
         //Magic School Skills
-        invocationXP: 0,
-        abjurationXP: 0,
+        invocationXP: 100,
+        abjurationXP: 100,
         divinationXP: 0,
-        conjurationXP: 0,
+        conjurationXP: 100,
         illusionXP: 0,
-        enchantmentXP: 0,
+        enchantmentXP: 100,
         necromancyXP: 0,
-        alterationXP: 0,
+        alterationXP: 100,
         //Crafting Skills
         tailorXP: 0,
         tannerXP: 0,
@@ -64,7 +66,7 @@ events.onPlayerLoggedIn(function(event as PlayerLoggedInEvent) {
         blacksmithXP: 0,
         glassmithXP: 0,
         goldsmithXP: 0,
-        alchemistXP: 0,
+        alchemistXP: 100,
         cookXP: 0
       }
     } as IData;

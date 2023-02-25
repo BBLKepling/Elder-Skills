@@ -11,6 +11,8 @@ CraftTweaker Integration
 Electroblob's Wizardry
 Elanai Dodge
 Game Stages
+PackMode
+PackModeMenu
 Reach Fix
 Reskillable
 RLCombat
