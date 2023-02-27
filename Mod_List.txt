@@ -8,6 +8,7 @@ Compatskills
 ContentTweaker
 CraftTweaker
 CraftTweaker Integration
+CraftTweaker Utils
 Electroblob's Wizardry
 Elanai Dodge
 Game Stages
@@ -21,3 +22,4 @@ Spartan Weaponry
 Swing Through Grass
 Time Stages
 WizardryUtils
+Zen Utils
